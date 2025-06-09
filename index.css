@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Fredoka:wght@300..700&family=Noto+Sans+JP:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Fredoka:wght@300..700&family=Noto+Sans+JP:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url(img) center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+}
+
+main.table {
+    width: 82vw;
+    height: 90vh;
+    background-color: #fff5;
+
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+}
+
+td img{
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+table, th, td{
+    padding: 1rem;
+}
