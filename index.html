@@ -6,41 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/iconoy.png" type="image/x-icon">
     <title>Concentra - Yeshua</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <h1 class="titulo">Lista de ligas</h1>
+    <header>
+        <a href="html/ligas.html">
+            <button class="btn btn-info" type="button">Registro</button>
+        </a>
+    </header>
 
-    <main class="table">
-        <section class="table_header">
-            <h1>Customer's Orders</h1>
-        </section>
-        <section class="table_body">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Num.</th>
-                        <th>Nombre de la liga</th>
-                        <th>Nombre de la iglesia</th>
-                        <th>Num. Jovenes</th>
-                        <th>Consejeros</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Yeshua</td>
-                        <td>El mesias</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td><strong>12</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
+    <div class="main">
+        <main class="table">
+            <section class="table_header">
+                <h1 class="titulo">Lista de ligas</h1>
+            </section>
+            <section class="table_body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre de la liga</th>
+                            <th>Nombre de la iglesia</th>
+                            <th>Num. Jovenes</th>
+                            <th>Consejeros</th>
+                            <th>Pastores</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Yeshua</td>
+                            <td>El mesias</td>
+                            <td>10</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td><strong>14</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
