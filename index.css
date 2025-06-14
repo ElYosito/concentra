@@ -13,38 +13,26 @@ body {
     background-color: #648eb8;
 }
 
-header{
-    text-align: right;
-    padding: 1rem;
-}
-
-header img{
-    height: 100px;
-}
-
-header a button{
-    font-size: x-large;
-}
-
-.main{
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 0px 0px 0px;
 }
 
 .titulo {
     font-family: "Edu VIC WA NT Hand Pre", cursive;
+    text-align: center;
+    font-size: x-large;
 }
 
 main.table {
-    width: 82vw;
-    height: 90vh;
+    width: 95%;
+    height: auto;
     background-color: #fff5;
-
     backdrop-filter: blur(7px);
     box-shadow: 0 .4rem .8rem #0005;
     border-radius: .8rem;
-
     overflow: hidden;
 }
 
@@ -53,6 +41,35 @@ main.table {
     height: auto;
     background-color: #fff4;
     padding: .8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table_header img{
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.btn {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .table_body {
@@ -66,32 +83,8 @@ main.table {
     overflow: auto;
 }
 
-.table_body::-webkit-scrollbar {
-    width: 0.5rem;
-    height: 0.5rem;
-}
-
-.table_body::-webkit-scrollbar-thumb {
-    border-radius: .5rem;
-    background-color: #0004;
-    visibility: hidden;
-}
-
-.table_body:hover::-webkit-scrollbar-thumb {
-    visibility: visible;
-}
-
 table {
     width: 100%;
-}
-
-td img {
-    width: 36px;
-    height: 36px;
-    margin-right: .5rem;
-    border-radius: 50%;
-
-    vertical-align: middle;
 }
 
 table,
@@ -107,29 +100,4 @@ thead th {
     top: 0;
     left: 0;
     background-color: #d5d1defe;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #0000000b;
-}
-
-tbody tr:hover {
-    background-color: #fff6;
-}
-
-.status {
-    padding: .4rem 0;
-    border-radius: 2rem;
-    text-align: center;
-}
-
-.status.delivered {
-    background-color: #86e49d;
-    color: #006b21;
-}
-
-@media (max-width: 1000px) {
-    td:not(:first-of-type) {
-        min-width: 12.1rem;
-    }
 }
