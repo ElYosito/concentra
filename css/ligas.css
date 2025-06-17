@@ -52,7 +52,7 @@ header {
 }
 
 .back-button img {
-    height: 40px;
+    height: 60px;
     transition: transform 0.2s;
 }
 
@@ -65,4 +65,8 @@ h1 {
     font-size: 2rem;
     color: white;
     text-align: center;
+}
+
+main {
+    padding: 20px;
 }
