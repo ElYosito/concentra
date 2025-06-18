@@ -4,7 +4,8 @@ import {
     collection,
     deleteDoc,
     doc,
-    onSnapshot
+    onSnapshot,
+    getDocs
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 import { updateDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
@@ -76,7 +77,7 @@ async function borrarTodasLasLigas() {
         );
 
         await Promise.all(borras);
-        cargarLigas();
+        escucharLigasEnTiempoReal();
     } catch (error) {
         console.error("Error al borrar los registros:", error);
         alert("Ocurrió un error al borrar los registros.");

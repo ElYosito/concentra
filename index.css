@@ -49,16 +49,17 @@ main.table {
 .table_header img {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 tbody {
     cursor: pointer;
 }
 
-.btn {
+.Registro {
     background: linear-gradient(135deg, #00c6ff, #0072ff);
     color: black;
-    padding: 15px 30px;
+    padding: 15px 30px !important;
     border: none;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
@@ -66,12 +67,12 @@ tbody {
     transition: all 0.3s ease;
 }
 
-.btn:hover {
+.Registro:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.btn:active {
+.Registro:active {
     transform: translateY(1px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
